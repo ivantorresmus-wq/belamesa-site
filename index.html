@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Belamesa: fornecimento de gêneros alimentícios para municípios, governo estadual e secretarias desde 2013. Responsabilidade técnica em nutrição e parceria direta com os fabricantes.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Belamesa · Alimentos de qualidade para o poder público">
+<meta property="og:description" content="Cuidado que chega ao prato. Fornecedora de alimentos para o setor público desde 2013.">
+<meta property="og:image" content="img/og-image.jpg">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Belamesa · Alimentos de qualidade para o poder público</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lora:ital,wght@1,400;1,500&display=swap">
+<style>
+/* Layout: cinematic graphite bands (hero, rows, manifesto) alternating with warm cream reading bands; one brand gold accent. Single committed look. */
+:root{
+  --graphite:#2b292a; --graphite-2:#363435; --graphite-3:#4a4849;
+  --cream:#fbf7ec; --sand:#e6e1d4; --stone:#6f6c6d;
+  --gold:#a87b05; --gold-soft:#d9b25a; --white:#ffffff;
+  --display:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --quote:"Lora",Georgia,"Times New Roman",serif;
+  --gut-l:max(16px,env(safe-area-inset-left,0px)); --gut-r:max(16px,env(safe-area-inset-right,0px));
+  --maxw:1180px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--graphite-2);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);line-height:1.12;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.dark .eyebrow{color:var(--gold-soft)}
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:.85em 1.5em;border-radius:999px;font-weight:500;font-size:.95rem;text-decoration:none;transition:background .25s,color .25s,transform .25s;border:1px solid transparent;cursor:pointer;font-family:var(--body)}
+.btn-gold{background:var(--gold);color:var(--white)}
+.btn-gold:hover{background:#946b02;transform:translateY(-1px)}
+.btn-ghost{border-color:rgba(255,255,255,.45);color:var(--white)}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--graphite)}
+.top{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;transition:background .35s,box-shadow .35s}
+.top.solid{background:rgba(43,41,42,.94);backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(255,255,255,.06)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.top img{height:40px;width:auto;display:block}
+.nav{display:flex;gap:28px;align-items:center}
+.nav a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.9rem}
+.nav a:hover{color:var(--white)}
+.nav .btn{padding:.6em 1.2em;color:var(--white)}
+@media (max-width:860px){.nav a:not(.btn){display:none}}
+
+/* hero: crossfading slides with slow push-in */
+.hero{position:relative;min-height:min(86vh,780px);display:flex;align-items:flex-end;background:var(--graphite);color:var(--white);overflow:hidden}
+.slides,.slide{position:absolute;inset:0}
+.slide{opacity:0;transition:opacity 1.6s ease}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.02)}
+.slide.on img{animation:push 9s ease-out forwards}
+@keyframes push{from{transform:scale(1.02)}to{transform:scale(1.12)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,28,29,.88) 0%,rgba(30,28,29,.55) 45%,rgba(30,28,29,.1) 100%),linear-gradient(0deg,rgba(30,28,29,.9) 0%,rgba(30,28,29,0) 45%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-block:150px 64px}
+.hero h1{font-size:clamp(2.2rem,5.4vw,4.3rem);font-weight:600;max-width:15ch;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--gold-soft)}
+.hero p.lead{margin-top:20px;max-width:46ch;font-size:clamp(1rem,1.5vw,1.15rem);color:rgba(255,255,255,.85);font-weight:300}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.dots{display:flex;gap:8px;margin-top:44px}
+.dots button{width:34px;height:4px;border-radius:2px;border:0;background:rgba(255,255,255,.3);cursor:pointer;padding:0;position:relative;overflow:hidden}
+.dots button.on::after{content:"";position:absolute;inset:0;background:var(--gold-soft);transform-origin:left;animation:bar 7s linear forwards}
+@keyframes bar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.slide-cap{margin-top:14px;font-size:.8rem;color:rgba(255,255,255,.6);letter-spacing:.04em;min-height:1.4em}
+
+/* numbers */
+.numbers{background:var(--graphite-2);color:var(--white)}
+.numbers .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-block:44px}
+.num b{display:block;font-size:clamp(2rem,3.6vw,2.9rem);font-weight:600;color:var(--gold-soft);line-height:1;font-variant-numeric:tabular-nums}
+.num span{display:block;margin-top:10px;font-size:.88rem;color:rgba(255,255,255,.72);max-width:22ch}
+@media (max-width:760px){.numbers .wrap{grid-template-columns:repeat(2,1fr);row-gap:32px}}
+
+/* about */
+.section{padding-block:96px}
+.about .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start}
+.about h2{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;margin-top:12px}
+.about .txt{display:grid;gap:18px;margin-top:24px;max-width:60ch;color:var(--graphite-3)}
+.about .txt strong{color:var(--graphite-2);font-weight:600}
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:0;border-left:2px solid var(--sand)}
+.timeline li{position:relative;padding:0 0 30px 28px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--cream);border:2px solid var(--gold)}
+.timeline li:last-child::before{background:var(--gold)}
+.timeline b{display:block;font-weight:600;color:var(--gold);font-size:1.05rem}
+.timeline p{color:var(--graphite-3);font-size:.95rem}
+.photo{border-radius:14px;overflow:hidden;margin-top:36px;aspect-ratio:16/10;max-width:100%}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:900px){.about .grid{grid-template-columns:1fr;gap:40px}}
+
+/* founder */
+.founder{background:var(--sand)}
+.founder .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.founder h2{font-size:clamp(1.6rem,2.8vw,2.3rem);font-weight:600;margin-top:12px}
+.founder .txt{display:grid;gap:16px;margin-top:20px;color:var(--graphite-3);max-width:58ch}
+.career{display:grid;gap:12px}
+.career div{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;padding:18px 20px;background:var(--cream);border-radius:12px;align-items:baseline}
+.career b{font-size:1.5rem;font-weight:600;color:var(--gold);grid-row:span 2;min-width:3.6ch;font-variant-numeric:tabular-nums}
+.career strong{font-weight:600}
+.career span{font-size:.88rem;color:var(--stone)}
+@media (max-width:900px){.founder .grid{grid-template-columns:1fr;gap:36px}}
+
+/* netflix-style row */
+.journey{background:var(--graphite);color:var(--white);padding-block:88px;overflow:hidden}
+.journey .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.journey h2{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;margin-top:12px;max-width:20ch}
+.journey .head p{color:rgba(255,255,255,.7);max-width:44ch;margin-top:12px}
+.arrows{display:flex;gap:10px}
+.arrows button{width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:transparent;color:var(--white);font-size:1.2rem;cursor:pointer;transition:background .2s}
+.arrows button:hover{background:rgba(255,255,255,.12)}
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:40px;padding-bottom:12px;padding-left:max(var(--gut-l),calc((100vw - var(--maxw))/2 + 16px));padding-right:var(--gut-r);scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.card{flex:0 0 clamp(250px,30vw,360px);scroll-snap-align:start;position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/4;background:var(--graphite-2);transition:transform .35s ease}
+.card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.card:hover{transform:translateY(-6px)}
+.card:hover img{transform:scale(1.06)}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,19,19,.92) 8%,rgba(20,19,19,0) 60%)}
+.card .cap{position:absolute;left:0;right:0;bottom:0;padding:22px;z-index:2}
+.card .step{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft);font-weight:600}
+.card h3{font-size:1.15rem;font-weight:600;margin-top:6px}
+.card p{font-size:.86rem;color:rgba(255,255,255,.75);margin-top:6px;line-height:1.5}
+
+/* guarantees */
+.why h2{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;margin-top:12px;max-width:22ch}
+.g-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:44px}
+.g{display:grid;grid-template-columns:120px 1fr;gap:22px;padding:22px;background:var(--white);border-radius:14px;border:1px solid var(--sand);align-items:start}
+.g img{width:120px;height:120px;object-fit:cover;border-radius:10px;display:block}
+.g h3{font-size:1.08rem;font-weight:600}
+.g p{font-size:.92rem;color:var(--graphite-3);margin-top:8px}
+.balance{margin-top:20px;padding:28px 32px;border-radius:14px;background:var(--graphite-2);color:var(--white);display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center}
+.balance b{font-size:1.15rem;font-weight:600;color:var(--gold-soft);max-width:14ch;line-height:1.3}
+.balance p{color:rgba(255,255,255,.8);font-size:.95rem}
+@media (max-width:900px){.g-grid{grid-template-columns:1fr}}
+@media (max-width:520px){.g{grid-template-columns:1fr}.g img{width:100%;height:auto;aspect-ratio:16/9}.balance{grid-template-columns:1fr}}
+
+/* process */
+.process{background:var(--sand)}
+.process h2{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;margin-top:12px;max-width:20ch}
+.steps{list-style:none;margin:44px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.steps li{padding-top:22px;border-top:2px solid var(--gold);counter-increment:s}
+.steps li::before{content:counter(s,decimal-leading-zero);display:block;font-size:2rem;font-weight:600;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums}
+.steps h3{font-size:1.02rem;font-weight:600;margin-top:14px}
+.steps p{font-size:.9rem;color:var(--graphite-3);margin-top:8px}
+.gains{margin-top:56px;display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start;background:var(--cream);border-radius:14px;padding:36px}
+.gains h3{font-size:1.4rem;font-weight:600}
+.gains ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 28px}
+.gains li{position:relative;padding-left:28px;font-size:.95rem}
+.gains li::before{content:"";position:absolute;left:0;top:.45em;width:14px;height:8px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg)}
+@media (max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}.gains{grid-template-columns:1fr}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}.gains ul{grid-template-columns:1fr}.gains{padding:24px}}
+
+/* coverage */
+.coverage .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.coverage h2{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;margin-top:12px}
+.coverage .lead{color:var(--graphite-3);margin-top:16px;max-width:40ch}
+.coverage .big{margin-top:28px;display:flex;align-items:baseline;gap:12px}
+.coverage .big b{font-size:3.6rem;font-weight:600;color:var(--gold);line-height:1}
+.coverage .big span{color:var(--stone);font-size:.92rem;max-width:20ch;line-height:1.4}
+.regions{display:grid;grid-template-columns:repeat(2,1fr);gap:26px 32px}
+.regions h3{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--graphite-2);padding-bottom:10px;border-bottom:1px solid var(--sand)}
+.regions ul{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.regions li{font-size:.86rem;padding:.3em .8em;border-radius:999px;background:var(--white);border:1px solid var(--sand)}
+.regions li.hq{background:var(--gold);color:var(--white);border-color:var(--gold)}
+@media (max-width:900px){.coverage .grid{grid-template-columns:1fr;gap:36px}}
+@media (max-width:520px){.regions{grid-template-columns:1fr}}
+
+/* manifesto */
+.manifesto{position:relative;color:var(--white);background:var(--graphite);overflow:hidden}
+.manifesto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.manifesto::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(25,24,24,.88) 0%,rgba(25,24,24,.45) 55%,rgba(25,24,24,.25) 100%)}
+.manifesto .wrap{position:relative;z-index:2;padding-block:200px 80px;display:grid;gap:18px}
+.manifesto blockquote{margin:0;font-family:var(--quote);font-style:italic;font-size:clamp(1.6rem,3.4vw,2.7rem);line-height:1.3;max-width:24ch}
+.manifesto .sig{display:flex;align-items:center;gap:16px;margin-top:10px}
+.manifesto .sig img{position:static;width:150px;height:auto;object-fit:contain}
+.manifesto .sig span{color:var(--gold-soft);font-size:.95rem;letter-spacing:.04em}
+
+/* contact */
+.contact{background:var(--graphite-2);color:var(--white)}
+.contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact h2{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;margin-top:12px}
+.contact .lead{color:rgba(255,255,255,.78);margin-top:16px;max-width:46ch}
+.c-list{display:grid;gap:14px}
+.c-item{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:center;padding:20px 22px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.c-item small{grid-column:1;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft);font-weight:600}
+.c-item a,.c-item span{grid-column:1;font-size:1.1rem;font-weight:500;text-decoration:none;color:var(--white);user-select:all;word-break:break-word}
+.c-item button{grid-column:2;grid-row:1/span 2;font-family:var(--body);font-size:.8rem;padding:.5em 1em;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:transparent;color:var(--white);cursor:pointer}
+.c-item button:hover{background:rgba(255,255,255,.1)}
+@media (max-width:900px){.contact .grid{grid-template-columns:1fr;gap:36px}}
+@media (max-width:480px){.c-item{grid-template-columns:1fr;gap:6px}.c-item a,.c-item span{font-size:1rem;word-break:normal;overflow-wrap:anywhere}.c-item button{grid-column:1;grid-row:auto;justify-self:start;margin-top:8px}}
+footer{background:var(--graphite);color:rgba(255,255,255,.55);font-size:.82rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:26px}
+footer img{height:26px;width:auto;display:block;opacity:.9}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+
+</head>
+<body>
+<header class="top" id="top">
+  <div class="wrap">
+    <a href="#inicio" aria-label="Belamesa, início"><img src="img/logo.png" alt="Belamesa"></a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#jornada">Do edital ao prato</a>
+      <a href="#garantias">Garantias</a>
+      <a href="#atendemos">Onde atendemos</a>
+      <a class="btn btn-gold" href="#contato">Fale conosco</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero dark" id="inicio">
+  <div class="slides" aria-hidden="true">
+    <div class="slide on" data-cap="Fornecimento para municípios, governo estadual e secretarias"><img src="img/aerea.jpg" alt=""></div>
+    <div class="slide" data-cap="Equipe técnica de nutrição acompanhando cada etapa"><img src="img/cozinha.jpg" alt=""></div>
+    <div class="slide" data-cap="Entrega regular, no prazo, em cada unidade"><img src="img/van.jpg" alt=""></div>
+    <div class="slide" data-cap="O resultado chega ao prato"><img src="img/criancas.jpg" alt=""></div>
+  </div>
+  <div class="wrap">
+    <p class="eyebrow">Desde 2013 · Santo André, SP</p>
+    <h1>Alimentos de qualidade para o <em>poder público.</em></h1>
+    <p class="lead">Fornecimento de gêneros alimentícios para municípios, governo estadual e secretarias, com responsabilidade técnica em nutrição e parceria direta com os fabricantes.</p>
+    <div class="cta">
+      <a class="btn btn-gold" href="#contato">Fale com a Belamesa</a>
+      <a class="btn btn-ghost" href="#jornada">Como trabalhamos</a>
+    </div>
+    <div class="dots" role="tablist" aria-label="Imagens de destaque"></div>
+    <p class="slide-cap" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="numbers dark" aria-label="Números">
+  <div class="wrap">
+    <div class="num"><b>+10</b><span>anos de atuação contínua em contratos públicos</span></div>
+    <div class="num"><b>+25</b><span>clientes públicos já atendidos</span></div>
+    <div class="num"><b>7</b><span>regiões atendidas em SP e no PR</span></div>
+    <div class="num"><b>+30</b><span>anos de experiência do fundador no setor</span></div>
+  </div>
+</section>
+
+<section class="section about" id="quem-somos">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Quem somos</p>
+      <h2>Mais de 10 anos dedicados a uma única missão: fornecer alimentos ao setor público.</h2>
+      <div class="txt">
+        <p>A Belamesa existe para garantir que o alimento contratado pelo poder público chegue à mesa de quem mais precisa com <strong>qualidade, regularidade e preço justo</strong>.</p>
+        <p>Não somos um distribuidor generalista que eventualmente participa de licitações. <strong>Licitação pública de alimentos é o nosso negócio principal.</strong> Conhecemos cada etapa do processo, do edital à última entrega, e atuamos para que o gestor tenha um fornecedor que resolve, e não mais um problema para acompanhar.</p>
+        <p>A sede em Santo André, no ABC Paulista, é estratégica para atender com agilidade a Grande São Paulo, o litoral, o Vale do Paraíba e o interior do estado.</p>
+      </div>
+    </div>
+    <div>
+      <ol class="timeline">
+        <li><b>2013</b><p>Fundação da empresa em Vila Gustavo, Zona Norte de São Paulo, por Paulo Jesus Pereira.</p></li>
+        <li><b>Expansão</b><p>Contratos conquistados na Grande São Paulo, no litoral, no interior e no Paraná.</p></li>
+        <li><b>Hoje</b><p>Sede em Santo André (SP), em uma estrutura maior e com equipe técnica própria de nutrição.</p></li>
+      </ol>
+      <div class="photo"><img src="img/estoque.jpg" alt="Nutricionistas conferindo rótulos e validade no estoque" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section founder" aria-labelledby="founder-h">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Quem está à frente</p>
+      <h2 id="founder-h">Uma empresa construída sobre mais de 30 anos de experiência.</h2>
+      <div class="txt">
+        <p>Desde os 20 anos, Paulo Jesus Pereira atua em empresas que participam de licitações públicas de alimentos em São Paulo e no Paraná. Conheceu o setor por dentro: as exigências dos editais, as especificações técnicas e a logística de entrega.</p>
+        <p>Foram 17 anos na Nutrimental S.A., indústria de alimentos de São José dos Pinhais (PR), acompanhando o lado de quem fabrica. Essa visão hoje se traduz na parceria direta da Belamesa com os fabricantes.</p>
+      </div>
+    </div>
+    <div class="career">
+      <div><b>+30</b><strong>anos em alimentação para o setor público</strong><span>Paulo Jesus Pereira, fundador e administrador</span></div>
+      <div><b>17</b><strong>anos na indústria de alimentos</strong><span>Nutrimental S.A., São José dos Pinhais (PR)</span></div>
+      <div><b>2</b><strong>estados de atuação ao longo da carreira</strong><span>Rótulo, Licitare e Nutrimental, em SP e no PR</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="journey dark" id="jornada" aria-labelledby="journey-h">
+  <div class="wrap head">
+    <div>
+      <p class="eyebrow">Do edital ao prato</p>
+      <h2 id="journey-h">Cada etapa sob controle, até chegar à criança.</h2>
+      <p>Acompanhamos o alimento do momento em que o edital é publicado até o prato servido na escola.</p>
+    </div>
+    <div class="arrows">
+      <button type="button" id="prev" aria-label="Voltar">&#8592;</button>
+      <button type="button" id="next" aria-label="Avançar">&#8594;</button>
+    </div>
+  </div>
+  <div class="rail" id="rail">
+    <article class="card"><img src="img/estoque.jpg" alt="Nutricionistas conferindo produtos" loading="lazy"><div class="cap"><span class="step">Etapa 1</span><h3>Análise técnica do edital</h3><p>Nutricionistas avaliam especificações, gramaturas e exigências sanitárias antes da proposta.</p></div></article>
+    <article class="card"><img src="img/caixa.jpg" alt="Caixa de alimentos sendo entregue" loading="lazy"><div class="cap"><span class="step">Etapa 2</span><h3>Produto certo, direto do fabricante</h3><p>Acesso direto à indústria para o melhor equilíbrio entre preço e qualidade.</p></div></article>
+    <article class="card"><img src="img/gestor.jpg" alt="Gestor público e diretora no refeitório" loading="lazy"><div class="cap"><span class="step">Etapa 3</span><h3>Proposta e habilitação</h3><p>Documentação organizada, proposta precisa e prazos do certame cumpridos.</p></div></article>
+    <article class="card"><img src="img/van.jpg" alt="Entrega de alimentos na escola" loading="lazy"><div class="cap"><span class="step">Etapa 4</span><h3>Entrega regular</h3><p>Fornecimento contínuo durante toda a vigência, com canal direto com o órgão.</p></div></article>
+    <article class="card"><img src="img/termometro.jpg" alt="Nutricionista medindo a temperatura do feijão" loading="lazy"><div class="cap"><span class="step">Acompanhamento</span><h3>Segurança alimentar</h3><p>Compromisso do começo ao fim, não uma etapa isolada.</p></div></article>
+    <article class="card"><img src="img/prato.jpg" alt="Merendeira entregando o prato a uma criança" loading="lazy"><div class="cap"><span class="step">Resultado</span><h3>Cuidado que chega ao prato</h3><p>O que chega à ponta foi pensado para ser aceito e consumido.</p></div></article>
+  </div>
+</section>
+
+<section class="section why" id="garantias" aria-labelledby="why-h">
+  <div class="wrap">
+    <p class="eyebrow">Por que a Belamesa</p>
+    <h2 id="why-h">Quatro garantias que reduzem o risco do seu contrato.</h2>
+    <div class="g-grid">
+      <article class="g"><img src="img/termometro.jpg" alt=""><div><h3>Responsabilidade técnica em nutrição</h3><p>Nutricionistas experientes analisam cada edital e asseguram que o produto atende às normas técnicas e à legislação vigente.</p></div></article>
+      <article class="g"><img src="img/caixa.jpg" alt=""><div><h3>Parceria direta com os fabricantes</h3><p>Sem intermediários: preço competitivo, origem rastreável e segurança no abastecimento durante todo o contrato.</p></div></article>
+      <article class="g"><img src="img/cozinha.jpg" alt=""><div><h3>O produto certo para cada necessidade</h3><p>Ajudamos a escolher o item mais adequado e participamos, com a indústria, da formulação de novos produtos.</p></div></article>
+      <article class="g"><img src="img/gestor.jpg" alt=""><div><h3>Especialistas em licitações públicas</h3><p>Mais de 10 anos em licitações estaduais e municipais, com cumprimento contratual rigoroso.</p></div></article>
+    </div>
+    <div class="balance"><b>Equilíbrio entre preço e qualidade</b><p>Preço competitivo só gera economia de verdade quando o produto é aprovado na conferência, bem aceito por quem consome e entregue no prazo.</p></div>
+  </div>
+</section>
+
+<section class="section process" aria-labelledby="proc-h">
+  <div class="wrap">
+    <p class="eyebrow">Como trabalhamos</p>
+    <h2 id="proc-h">Do edital à entrega, cada etapa sob controle.</h2>
+    <ol class="steps">
+      <li><h3>Análise técnica do edital</h3><p>Avaliamos especificações, gramaturas e exigências sanitárias para não ofertar produtos que seriam recusados na entrega.</p></li>
+      <li><h3>Seleção do produto com o fabricante</h3><p>Com acesso direto à indústria, definimos o item que atende ao edital com a melhor relação entre preço e qualidade.</p></li>
+      <li><h3>Proposta e habilitação</h3><p>Proposta precisa, documentação organizada e prazos cumpridos: um processo limpo para a comissão analisar.</p></li>
+      <li><h3>Entrega e acompanhamento</h3><p>Atendimento próximo durante toda a vigência, com fornecimento regular e canal direto para ajustes.</p></li>
+    </ol>
+    <div class="gains">
+      <h3>O que o gestor ganha</h3>
+      <ul>
+        <li>Produtos aprovados na conferência de recebimento</li>
+        <li>Conformidade com normas técnicas e sanitárias</li>
+        <li>Interlocução técnica qualificada</li>
+        <li>Regularidade no abastecimento das unidades</li>
+        <li>Preço competitivo com origem conhecida</li>
+        <li>Menos ocorrências e retrabalho no contrato</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section coverage" id="atendemos" aria-labelledby="cov-h">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Quem confia na Belamesa</p>
+      <h2 id="cov-h">Mais de 25 clientes públicos já escolheram a Belamesa.</h2>
+      <p class="lead">Atendemos municípios e órgãos públicos em sete regiões de São Paulo e do Paraná, a partir da sede em Santo André.</p>
+      <div class="big"><b>+25</b><span>clientes públicos em 7 regiões, em SP e no PR</span></div>
+    </div>
+    <div class="regions">
+      <div><h3>Grande São Paulo</h3><ul><li>Guarulhos</li><li>Mairiporã</li><li>Mogi das Cruzes</li><li>Guararema</li><li>São Bernardo do Campo</li><li>Mauá</li><li class="hq">Santo André (CRAISA)</li></ul></div>
+      <div><h3>Campinas e Jundiaí</h3><ul><li>Campinas</li><li>Jundiaí</li><li>Cosmópolis</li><li>Capivari</li><li>Amparo</li><li>Itapira</li></ul></div>
+      <div><h3>Interior Paulista</h3><ul><li>Botucatu</li><li>Itapetininga</li><li>Assis</li><li>Mococa</li></ul></div>
+      <div><h3>Litoral e Vale do Ribeira</h3><ul><li>Santos</li><li>Praia Grande</li><li>Jacupiranga</li><li>Juquiá</li></ul></div>
+      <div><h3>Vale do Paraíba</h3><ul><li>São José dos Campos</li><li>Caçapava</li><li>Pindamonhangaba</li></ul></div>
+      <div><h3>Região Bragantina</h3><ul><li>Atibaia</li><li>Jarinu</li><li>Piracaia</li></ul></div>
+      <div><h3>Paraná</h3><ul><li>Cascavel</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="manifesto" aria-label="Manifesto">
+  <img src="img/criancas.jpg" alt="Duas crianças sorrindo uma para a outra durante a refeição na escola" loading="lazy">
+  <div class="wrap">
+    <p class="eyebrow">Nosso compromisso</p>
+    <blockquote>“Tudo o que a gente faz cabe nesse sorriso.”</blockquote>
+    <div class="sig"><img src="img/logo.png" alt="Belamesa"><span>Cuidado que chega ao prato.</span></div>
+  </div>
+</section>
+
+<section class="section contact dark" id="contato" aria-labelledby="ct-h">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Fale com a Belamesa</p>
+      <h2 id="ct-h">Um fornecedor preparado para as exigências do setor público.</h2>
+      <p class="lead">Conheça nosso catálogo, nossas marcas e nossa forma de trabalhar. Nossa equipe está à disposição para apresentar as fichas técnicas dos produtos e esclarecer qualquer especificação.</p>
+    </div>
+    <div class="c-list">
+      <div class="c-item"><small>Telefone</small><a href="tel:+551126387132">(11) 2638-7132</a><button type="button" data-copy="(11) 2638-7132">Copiar</button></div>
+      <div class="c-item"><small>E-mail</small><a href="mailto:contato@belamesa.net.br">contato@belamesa.net.br</a><button type="button" data-copy="contato@belamesa.net.br">Copiar</button></div>
+      <div class="c-item"><small>Sede</small><span>Avenida Varsóvia, 700 · Santo André · SP</span><button type="button" data-copy="Avenida Varsóvia, 700, Santo André, SP">Copiar</button></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo.png" alt="Belamesa">
+    <span>© 2026 Belamesa · Alimentos de qualidade para o poder público</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var top=document.getElementById('top');
+  function onScroll(){top.classList.toggle('solid',window.scrollY>40)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  var dotsEl=document.querySelector('.dots'),cap=document.querySelector('.slide-cap');
+  var i=0,timer=null;
+  slides.forEach(function(s,k){
+    var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Imagem '+(k+1));
+    b.addEventListener('click',function(){go(k,true)});dotsEl.appendChild(b);
+  });
+  var dots=[].slice.call(dotsEl.children);
+  function go(k,user){
+    slides[i].classList.remove('on');dots[i].classList.remove('on');
+    i=k;slides[i].classList.add('on');
+    void dots[i].offsetWidth;dots[i].classList.add('on');
+    cap.textContent=slides[i].dataset.cap||'';
+    if(user){clearInterval(timer);timer=setInterval(next,7000)}
+  }
+  function next(){go((i+1)%slides.length)}
+  go(0);
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){timer=setInterval(next,7000)}
+
+  var rail=document.getElementById('rail');
+  function step(){var c=rail.querySelector('.card');return c?c.getBoundingClientRect().width+18:300}
+  document.getElementById('next').addEventListener('click',function(){rail.scrollBy({left:step(),behavior:'smooth'})});
+  document.getElementById('prev').addEventListener('click',function(){rail.scrollBy({left:-step(),behavior:'smooth'})});
+
+  document.querySelectorAll('[data-copy]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var t=btn.getAttribute('data-copy');
+      function ok(){btn.textContent='Copiado';setTimeout(function(){btn.textContent='Copiar'},1600)}
+      try{navigator.clipboard.writeText(t).then(ok,function(){sel(btn)})}catch(e){sel(btn)}
+    });
+  });
+  function sel(btn){var el=btn.parentNode.querySelector('a,span');var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+})();
+</script>
+
+</body>
+</html>
