@@ -13,4 +13,4 @@ Site institucional one-page da **Belamesa** — alimentos de qualidade para o po
 
 ## Publicação
 GitHub Pages → Settings → Pages → branch `main`, pasta `/ (root)`.
-Domínio (quando o DNS estiver pronto): `www.belamesa.net.br` — criar o arquivo `CNAME`. No DNS, **não alterar os registros MX/TXT do e-mail**.
+Domínio: `www.belamesa.net.br` (arquivo `CNAME`). No DNS, **não alterar os registros MX/TXT do e-mail**.
