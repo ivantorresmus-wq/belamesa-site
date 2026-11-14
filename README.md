@@ -13,4 +13,4 @@ Site institucional one-page da **Belamesa** — alimentos de qualidade para o po
 
 ## Publicação
 GitHub Pages → Settings → Pages → branch `main`, pasta `/ (root)`.
-Domínio: `www.belamesa.net.br` (arquivo `CNAME`). No DNS, **não alterar os registros MX/TXT do e-mail**.
+Domínio: `www.belamesaalimentos.com.br` (arquivo `CNAME`), registrado no Registro.br (titular iFilmes), DNS no próprio Registro.br. O e-mail continua em `@belamesa.net.br` (Locaweb).
