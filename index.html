@@ -124,10 +124,6 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .rail::-webkit-scrollbar{display:none}
 .card{flex:0 0 clamp(250px,30vw,360px);scroll-snap-align:start;position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/4;background:var(--graphite-2);transition:transform .35s ease}
 .card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
-.card.duo img{position:absolute;inset:0}
-.card.duo .b{animation:duo 9s ease-in-out infinite}
-@keyframes duo{0%,38%{opacity:0}50%,88%{opacity:1}100%{opacity:0}}
-@media (prefers-reduced-motion:reduce){.card.duo .b{animation:none;opacity:1}}
 .card:hover{transform:translateY(-6px)}
 .card:hover img{transform:scale(1.06)}
 .card::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,19,19,.92) 8%,rgba(20,19,19,0) 60%)}
@@ -315,7 +311,8 @@ footer img{height:26px;width:auto;display:block;opacity:.9}
     <article class="card"><img src="img/gestor.jpg" alt="Gestor público e diretora no refeitório" loading="lazy"><div class="cap"><span class="step">Etapa 3</span><h3>Proposta e habilitação</h3><p>Documentação organizada, proposta precisa e prazos do certame cumpridos.</p></div></article>
     <article class="card"><img src="img/van.jpg" alt="Entrega de alimentos na escola" loading="lazy"><div class="cap"><span class="step">Etapa 4</span><h3>Entrega regular</h3><p>Fornecimento contínuo durante toda a vigência, com canal direto com o órgão.</p></div></article>
     <article class="card"><img src="img/termometro.jpg" alt="Nutricionista medindo a temperatura do feijão" loading="lazy" style="object-position:68% 50%"><div class="cap"><span class="step">Acompanhamento</span><h3>Segurança alimentar</h3><p>Compromisso do começo ao fim, não uma etapa isolada.</p></div></article>
-    <article class="card duo"><img class="a" src="img/rosto.jpg" alt="Menina sorrindo no refeitório" loading="lazy"><img class="b" src="img/prato.jpg" alt="Merendeira entregando o prato a uma criança" loading="lazy"><div class="cap"><span class="step">Resultado</span><h3>Cuidado que chega ao prato</h3><p>O que chega à ponta foi pensado para ser aceito e consumido.</p></div></article>
+    <article class="card"><img src="img/prato.jpg" alt="Merendeira entregando o prato a uma criança" loading="lazy"><div class="cap"><span class="step">Resultado</span><h3>Cuidado que chega ao prato</h3><p>O que chega à ponta foi pensado para ser aceito e consumido.</p></div></article>
+    <article class="card"><img src="img/rosto.jpg" alt="Menina sorrindo com a mochila vermelha no pátio da escola" loading="lazy" style="object-position:50% 30%"><div class="cap"><span class="step">Quem ganha</span><h3>Tudo o que a gente faz cabe nesse sorriso</h3><p>Alimento certo, na hora certa: quem ganha é a criança que aprende melhor.</p></div></article>
   </div>
 </section>
 
