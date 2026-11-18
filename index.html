@@ -193,11 +193,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .contact h2{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;margin-top:12px}
 .contact .lead{color:rgba(255,255,255,.78);margin-top:16px;max-width:46ch}
 .c-list{display:grid;gap:14px}
-.c-item{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:center;padding:20px 22px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.c-item{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:center;padding:20px 22px 20px 20px;border-radius:8px;background:rgba(18,17,17,.55);border:1px solid rgba(255,255,255,.08);border-left:3px solid var(--gold);transition:border-color .25s ease,background .25s ease}
+.c-item:hover{background:rgba(18,17,17,.75);border-left-color:var(--gold-soft)}
 .c-item small{grid-column:1;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft);font-weight:600}
 .c-item a,.c-item span{grid-column:1;font-size:1.1rem;font-weight:500;text-decoration:none;color:var(--white);user-select:all;word-break:break-word}
 .c-item button{grid-column:2;grid-row:1/span 2;font-family:var(--body);font-size:.8rem;padding:.5em 1em;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:transparent;color:var(--white);cursor:pointer}
-.c-item button:hover{background:rgba(255,255,255,.1)}
+.c-item button:hover{background:var(--gold);border-color:var(--gold);color:#fff}
 @media (max-width:900px){.contact .grid{grid-template-columns:1fr;gap:36px}}
 @media (max-width:480px){.c-item{grid-template-columns:1fr;gap:6px}.c-item a,.c-item span{font-size:1rem;word-break:normal;overflow-wrap:anywhere}.c-item button{grid-column:1;grid-row:auto;justify-self:start;margin-top:8px}}
 footer{background:var(--graphite);color:rgba(255,255,255,.55);font-size:.82rem}
